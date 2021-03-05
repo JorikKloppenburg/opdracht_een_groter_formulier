@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- hier zet je de code in de head tags -->
+  <title>Receptenwebsite</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>Formulier</h1>
+  <form class="border" name="receptenformulier" method="POST" data-netlify="true">
+    <h2>Vul onderstaande gegevens in zodat we jouw recept kunnen toevoegen op onze receptenwebsite</h2>
+
+    <p><label>Naam: <input type="text" name="name" /></label>
+    </p>
+    <p><label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p><label>Telefoonnummer: <input type="tel" name="tel" /></label>
+    </p>
+    <p><label>Leeftijd: <input type="number" name="leeftijd" /></label>
+    </p>
+    <p><label>Geboortedatum: <input type="date" name="geboortedatum" /></label>
+    </p>
+    <p><label>Geslacht:<br>
+        <input type="radio" id="man" name="geslacht" value="Man" />Man<br>
+        <input type="radio" id="vrouw" name="geslacht" value="Vrouw" />Vrouw<br>
+      </label>
+    </p>
+    <p>
+      <label>Favoriete cuisine: <br>
+        <input type="checkbox" id="frans" name="favoriete cuisine" value="Frans" />Frans<br>
+        <input type="checkbox" id="italiaans" name="favoriete cuisine" value="Italiaans" />Italiaans<br>
+        <input type="checkbox" id="spaans" name="favoriete cuisine" value="Spaans" />Spaans<br>
+        <input type="checkbox" id="arabisch" name="favoriete cuisine" value="Arabisch" />Arabisch<br>
+      </label>
+    </p>
+    <p><label>Favoriete kleur van short: <input type="color" name="shortcolor" /></label>
+    </p>
+    <p>
+      <label>Biografie: <textarea name="message"></textarea></label>
+    </p>
+    <p><label>Upload je laatste recept: <input type="file" name="file"></label>
+    </p>
+    <p><label>URL naar jouw recepten website <input type="url" name="url"></label>
+    </p>
+    <p><button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+
+
+
+</body>
+
+</html>
